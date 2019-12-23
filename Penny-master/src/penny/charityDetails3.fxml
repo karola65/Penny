@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d2e773;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="penny.CharityDetailsController3">
+   <children>
+      <Text fx:id="charityDescription" layoutX="305.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events Organisers, Clubs, Hotels, Motors, Property, Recruitment and other sectors can easily send promotions, product details, special offers, alerts, confirmations, reminders, updates, news by SMS text messaging." wrappingWidth="259.568359375" />
+      <Button id="button" fx:id="donate" layoutX="453.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#donate" stylesheets="@register.css" text="Monthly donation" textFill="#d3c8c8" />
+      <AnchorPane layoutX="48.0" layoutY="48.0" prefHeight="320.0" prefWidth="225.0" style="-fx-background-color: #a1eb40;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="215.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@makeWish.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="charityName" layoutX="28.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charity.name()" wrappingWidth="121.13671875" />
+            <Text fx:id="charityPurpoe" layoutX="28.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charity.purpose" wrappingWidth="121.13671875" />
+            <Text fx:id="charityLocation" layoutX="28.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charity.location" wrappingWidth="121.13671875" />
+         </children>
+      </AnchorPane>
+      <Button id="button" fx:id="donate1" layoutX="305.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#donate" prefHeight="25.0" prefWidth="121.0" stylesheets="@register.css" text="Donate today" textFill="#e8dede" />
+      <Text layoutX="305.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you wish to donate the money select one of the below option" wrappingWidth="259.56835839897394">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Button fx:id="button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="0.0" prefWidth="43.0" stylesheets="@login.css" text="&lt;--" textFill="#ebd9d9" />
+   </children>
+</AnchorPane>

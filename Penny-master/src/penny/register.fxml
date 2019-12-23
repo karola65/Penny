@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9f8b3d;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="penny.RegisterController">
+    <stylesheets>
+        <URL value="@register.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="box" layoutX="11.0" layoutY="27.0" prefHeight="270.0" prefWidth="578.0" style="-fx-border-color: #9f8b3d; -fx-background-color: #d2e773;">
+         <children>
+            <TextField id="button" fx:id="firstName" layoutX="54.0" layoutY="50.0" promptText="First Name" stylesheets="@register.css" />
+            <TextField id="button" fx:id="lastName" layoutX="54.0" layoutY="91.0" promptText="Last Name" stylesheets="@register.css" />
+            <TextField id="button" fx:id="email" layoutX="54.0" layoutY="129.0" promptText="Email" stylesheets="@register.css" />
+            <TextField id="button" fx:id="userName" layoutX="54.0" layoutY="164.0" promptText="UserName" stylesheets="@register.css" />
+            <TextField id="button" fx:id="password" alignment="TOP_LEFT" layoutX="54.0" layoutY="203.0" promptText="Password" styleClass="button" stylesheets="@register.css" />
+            <ImageView fitHeight="190.0" fitWidth="231.0" layoutX="298.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Users/micro/Desktop/logo.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Button id="button" fx:id="submit" layoutX="444.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="39.0" prefWidth="80.0" text="Submit" textFill="#dad0d0" />
+      <Text fx:id="login" layoutX="36.0" layoutY="324.0" onMouseClicked="#login" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? Go back for login." wrappingWidth="130.13671875" />
+   </children>
+</AnchorPane>

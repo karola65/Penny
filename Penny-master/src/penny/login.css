@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+  
+
+    
+
+}
+#username{
+    
+   -fx-text-inner-color: white;
+}
+
+#passwordBox{
+    
+   -fx-text-inner-color: white;
+}
+
+#button{
+    
+     -fx-text-inner-color: white;
+   -fx-background-color: #433930;
+}
+
+
+ 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d2e773;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="172.0" prefHeight="171.0" prefWidth="156.0" style="-fx-background-color: #a1eb40;">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="38.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="wwf.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="charity1Name" layoutX="11.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="134.13671875" />
+            <Button layoutX="43.0" layoutY="132.0" mnemonicParsing="false" style="-fx-background-color: #433930;" text="Delete" textFill="#f5ecec" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="222.0" layoutY="172.0" prefHeight="171.0" prefWidth="156.0" style="-fx-background-color: #a1eb40;">
+         <children>
+            <Button layoutX="49.0" layoutY="130.0" mnemonicParsing="false" style="-fx-background-color: #433930;" text="Delete" textFill="#f5ecec" />
+            <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="38.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="cancer.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="charity2Name" layoutX="11.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="134.13671875" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="411.0" layoutY="172.0" prefHeight="171.0" prefWidth="156.0" style="-fx-background-color: #a1eb40;">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="38.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="makeWish.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="charity3Name" layoutX="11.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="134.13671875" />
+            <Button layoutX="51.0" layoutY="125.0" mnemonicParsing="false" style="-fx-background-color: #433930;" text="Delete" textFill="#f5ecec" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="226.0" layoutY="89.0" text="Delete Charity">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="34.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: #433930;" text="Go Back" textFill="#f5ecec" />
+   </children>
+</AnchorPane>

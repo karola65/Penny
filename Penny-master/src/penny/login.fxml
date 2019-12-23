@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D2E773;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="penny.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <TextField id="username" fx:id="userNameBox" layoutX="225.0" layoutY="148.0" promptText="username" style="-fx-background-color: #433930;" stylesheets="@login.css">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#fffefe" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <Button fx:id="button" layoutX="278.0" layoutY="224.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #9f8b3d;" text="Login" />
+      <Text layoutX="173.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.13671875" />
+      <Text fx:id="register" layoutX="226.0" layoutY="276.0" onMouseClicked="#register" strokeType="OUTSIDE" strokeWidth="0.0" text="Not a member? Register" wrappingWidth="160.9830722808838" />
+      <Text layoutX="224.0" layoutY="307.0" onMouseClicked="#forgetpassword" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot your password?" wrappingWidth="151.99999809265137" />
+      <ImageView fitHeight="145.0" fitWidth="217.0" layoutX="202.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField id="button" fx:id="passwordBox" layoutX="225.0" layoutY="188.0" promptText="password" stylesheets="@login.css">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </PasswordField>
+   </children>
+</AnchorPane>
